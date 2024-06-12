@@ -16,7 +16,6 @@ const MainPage: React.FC = () => {
         <Text color="white">Nye brukere <span style={{ color: 'white' }}>298</span></Text>
         <Text color="white">Inaktive brukere <span style={{ color: 'white' }}>40</span></Text>
       </Flex>
-      {/* Add other components or content here */}
     </Box>
   );
 };

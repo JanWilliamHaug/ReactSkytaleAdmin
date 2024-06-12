@@ -9,22 +9,33 @@ import licenseIcon from '@/assets/scss/images/Group57.svg';
 import './Sidebar.css';
 
 const Sidebar: React.FC = () => {
+  const linkStyle = {
+    display: 'flex',
+    width: '100%',
+    padding: '9px 0px 10px 20px',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    flexShrink: 0,
+    borderBottom: '3px solid var(--Ocean-2, #1E2455)',
+    background: 'var(--Ocean-3, #212D63)',
+  };
+
   return (
     <Box className="sidebar-container">
       <VStack align="start" spacing={0}>
-        <NavLink to="/groups" className="sidebar-link sidebar-link-top">
+        <NavLink to="/groups" style={{ ...linkStyle, borderTop: '3px solid var(--Ocean-2, #1E2455)' }}>
           <Image src={groupIcon} alt="Group Icon" className="sidebar-icon" />
           <Text>Grupper</Text>
         </NavLink>
-        <NavLink to="/users" className="sidebar-link">
+        <NavLink to="/users" style={linkStyle}>
           <Image src={userIcon} alt="User Icon" className="sidebar-icon" />
           <Text>Brukere</Text>
         </NavLink>
-        <NavLink to="/configurations" className="sidebar-link">
-          <Image src={slidersIcon} alt="Sliders Icon" className="sidebar-icon" />
+        <NavLink to="/configurations" style={linkStyle}>
+          <Image src={slidersIcon} alt="Configurations Icon" className="sidebar-icon" />
           <Text>Konfigurasjoner</Text>
         </NavLink>
-        <NavLink to="/licenses" className="sidebar-link">
+        <NavLink to="/licenses" style={linkStyle}>
           <Image src={licenseIcon} alt="License Icon" className="sidebar-icon" />
           <Text>Lisens</Text>
         </NavLink>
