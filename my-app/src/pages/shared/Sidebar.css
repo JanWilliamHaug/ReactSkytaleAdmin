@@ -1,0 +1,30 @@
+/* src/pages/shared/Sidebar.css */
+.sidebar-container {
+    width: 250px;
+    background-color: var(--Ocean-3, #212D63);
+    color: white;
+    height: 100vh;
+  }
+  
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 9px 0px 10px 20px;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    border-bottom: 3px solid var(--Ocean-2, #1E2455);
+    background: var(--Ocean-3, #212D63);
+    text-decoration: none; /* Add this line to remove underline */
+  }
+  
+  .sidebar-link-top {
+    border-top: 3px solid var(--Ocean-2, #1E2455);
+  }
+  
+  .sidebar-icon {
+    width: 29.247px;
+    height: 30px;
+    margin-right: 10px; /* Add some space between the icon and text */
+  }
+  

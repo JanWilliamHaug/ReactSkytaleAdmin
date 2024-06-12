@@ -1,0 +1,28 @@
+/* src/pages/shared/Header.css */
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Ocean-3, #212D63);
+    padding: 10px 20px;
+    height: 120px;
+  }
+  
+  .header-title {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+  
+  .header-user-email {
+    color: var(--White, #FFF);
+    margin-left: 10px;
+  }
+  
+  .header-logout {
+    color: var(--White, #FFF);
+    margin-left: 10px;
+  }
+  
