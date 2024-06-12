@@ -9,9 +9,9 @@ const Layout: React.FC = () => {
   return (
     <Flex direction="column" height="100vh" width="100vw">
       <Header />
-      <Flex flex="1">
+      <Flex flex="1" overflow="hidden">
         <Sidebar />
-        <Box flex="1" padding="20px" backgroundColor="#1E2455" color="white" minWidth="0">
+        <Box flex="1" padding="20px" backgroundColor="#1E2455" color="white" overflow="auto">
           <Outlet />
         </Box>
       </Flex>
