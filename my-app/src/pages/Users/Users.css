@@ -3,34 +3,28 @@
   }
   
   .page-title {
+    color: white;
     font-size: 24px;
     font-weight: bold;
-    color: white;
-    margin-right: 20px;
+    margin-left: 55px; /* Adjusted margin-left to move it to the left */
   }
   
   .new-user-button {
     background-color: #FFF;
     color: #212D63;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
+    margin-top: -10px; /* Adjusted margin-top */
+    margin-right: 55px; /* Adjusted margin-right to move it to the left */
   }
   
   .user-info {
     color: white;
-    font-size: 16px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
   .icon {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
-  }
-  
-  .flex-center {
-    justify-content: center;
-    align-items: center;
   }
   

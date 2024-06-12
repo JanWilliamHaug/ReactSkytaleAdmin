@@ -13,24 +13,24 @@ const Users: React.FC = () => {
         <Text className="page-title">Brukere</Text>
         <Button className="new-user-button">Ny bruker</Button>
       </Flex>
-      <Flex justifyContent="center" mb="20px">
-        <Flex alignItems="center" mr="30px">
+      <Flex justifyContent="space-between" mb="20px" alignItems="center">
+        <Flex alignItems="center" justifyContent="center" flex="1">
           <Image src={userIcon} alt="User Icon" className="icon" />
           <Text className="user-info">Antall brukere <span>14 596</span></Text>
         </Flex>
-        <Flex alignItems="center" mr="30px">
+        <Flex alignItems="center" justifyContent="center" flex="1">
           <Image src={groupIcon} alt="Group Icon" className="icon" />
           <Text className="user-info">Fordelt i antall grupper <span>38</span></Text>
         </Flex>
-        <Flex alignItems="center" mr="30px">
+        <Flex alignItems="center" justifyContent="center" flex="1">
           <FaUserSlash className="icon" />
           <Text className="user-info">Brukere uten gruppe <span>10</span></Text>
         </Flex>
-        <Flex alignItems="center" mr="30px">
+        <Flex alignItems="center" justifyContent="center" flex="1">
           <FaUserPlus className="icon" />
           <Text className="user-info">Nye brukere <span>298</span></Text>
         </Flex>
-        <Flex alignItems="center">
+        <Flex alignItems="center" justifyContent="center" flex="1">
           <Image src={varselIcon} alt="Varsel Icon" className="icon" />
           <Text className="user-info">Inaktive brukere <span>40</span></Text>
         </Flex>
