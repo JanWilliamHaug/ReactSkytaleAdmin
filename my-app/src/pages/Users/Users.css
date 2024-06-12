@@ -1,25 +1,36 @@
-.page-title {
-    color: white;
+.users-page {
+    padding: 20px;
+  }
+  
+  .page-title {
     font-size: 24px;
     font-weight: bold;
+    color: white;
+    margin-right: 20px;
   }
   
   .new-user-button {
     background-color: #FFF;
     color: #212D63;
     font-weight: bold;
-  }
-  
-  .icon {
-    box-size: 24px;
-    margin-right: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
   }
   
   .user-info {
     color: white;
+    font-size: 16px;
+    margin-left: 10px;
   }
   
-  .user-info span {
-    color: white;
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
   }
   

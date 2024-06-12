@@ -8,25 +8,25 @@ import './Users.css';
 
 const Users: React.FC = () => {
   return (
-    <Box>
+    <Box className="users-page">
       <Flex justifyContent="space-between" alignItems="center" mb="20px">
         <Text className="page-title">Brukere</Text>
         <Button className="new-user-button">Ny bruker</Button>
       </Flex>
-      <Flex justifyContent="space-between" mb="20px">
-        <Flex alignItems="center">
+      <Flex justifyContent="center" mb="20px">
+        <Flex alignItems="center" mr="30px">
           <Image src={userIcon} alt="User Icon" className="icon" />
           <Text className="user-info">Antall brukere <span>14 596</span></Text>
         </Flex>
-        <Flex alignItems="center">
+        <Flex alignItems="center" mr="30px">
           <Image src={groupIcon} alt="Group Icon" className="icon" />
           <Text className="user-info">Fordelt i antall grupper <span>38</span></Text>
         </Flex>
-        <Flex alignItems="center">
+        <Flex alignItems="center" mr="30px">
           <FaUserSlash className="icon" />
           <Text className="user-info">Brukere uten gruppe <span>10</span></Text>
         </Flex>
-        <Flex alignItems="center">
+        <Flex alignItems="center" mr="30px">
           <FaUserPlus className="icon" />
           <Text className="user-info">Nye brukere <span>298</span></Text>
         </Flex>

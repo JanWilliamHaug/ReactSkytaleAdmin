@@ -1,25 +1,13 @@
-/* src/pages/shared/Header.css */
-
 .header {
-  background-color: #212D63;
-  padding: 10px 20px;
-  height: 115px; /* Adjust this height as needed */
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--Ocean-3, #212D63);
+  padding: 10px 20px;
+  height: 120px;
 }
 
-.header .logo {
-  display: flex;
-  align-items: center;
-}
-
-.header .logo img {
-  height: 44px;
-}
-
-.header .title {
-  color: #FFF;
+.header-title {
+  color: var(--White, #FFF);
   font-family: 'Inter', sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -27,17 +15,12 @@
   margin-left: 10px;
 }
 
-.header .user-info {
-  display: flex;
-  align-items: center;
+.header-email {
+  color: var(--White, #FFF);
+  margin-left: 10px;
 }
 
-.header .user-info img {
-  height: 39px;
-}
-
-.header .user-info .email,
-.header .user-info .logout {
-  color: #FFF;
+.header-logout {
+  color: var(--White, #FFF);
   margin-left: 10px;
 }
