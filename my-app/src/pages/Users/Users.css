@@ -1,0 +1,25 @@
+.page-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .new-user-button {
+    background-color: #FFF;
+    color: #212D63;
+    font-weight: bold;
+  }
+  
+  .icon {
+    box-size: 24px;
+    margin-right: 8px;
+  }
+  
+  .user-info {
+    color: white;
+  }
+  
+  .user-info span {
+    color: white;
+  }
+  
