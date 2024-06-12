@@ -1,8 +1,8 @@
 // src/pages/shared/Header.tsx
 import React from 'react';
 import { Flex, Text, Image } from '@chakra-ui/react';
-import logo from '@/assets/scss/images/logo.svg'; // Adjust the path as necessary
-import userIcon from '@/assets/scss/images/user-icon.svg'; // Adjust the path as necessary
+import logo from '@/assets/scss/images/logo.svg';
+import userIcon from '@/assets/scss/images/user-icon.svg';
 
 const Header: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       alignItems="center"
       backgroundColor="var(--Ocean-3, #212D63)"
       padding="10px 20px"
-      height="115px" // Increase the height to 160px
+      height="120px"
     >
       <Flex alignItems="center">
         <Image src={logo} alt="Logo" height="44px" />

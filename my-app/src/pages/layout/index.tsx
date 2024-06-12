@@ -7,13 +7,11 @@ import Header from '@/pages/shared/Header';
 
 const Layout: React.FC = () => {
   return (
-    <Flex direction="column" height="100vh">
-      <Box flexShrink={0}>
-        <Header />
-      </Box>
+    <Flex direction="column" height="100vh" width="100vw">
+      <Header />
       <Flex flex="1">
         <Sidebar />
-        <Box flex="1" padding="20px" backgroundColor="#1E2455" color="white">
+        <Box flex="1" padding="20px" backgroundColor="#1E2455" color="white" minWidth="0">
           <Outlet />
         </Box>
       </Flex>
