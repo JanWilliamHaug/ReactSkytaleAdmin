@@ -6,7 +6,7 @@ import Users from '@/pages/Users/Users';
 import Groups from '@/pages/Groups/Groups';
 import Configurations from '@/pages/Configurations/Configurations';
 import Licenses from '@/pages/Licenses/Licenses';
-import SampleTable from '@/pages/Users/SampleTable'; // Import SampleTable component
+import SampleTable from '@/pages/Users/UsersTable/SampleTable'; // Import SampleTable component
 import NotFound from '@/pages/NotFound';
 
 const routes = [

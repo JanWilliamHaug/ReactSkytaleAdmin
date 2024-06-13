@@ -1,21 +1,20 @@
 /* Sidebar.module.css */
 .link {
-    display: flex;
-    width: 100%;
-    padding: 9px 0px 10px 20px;
-    justify-content: flex-start;
-    align-items: center;
-    flex-shrink: 0;
-    border-bottom: 3px solid var(--Ocean-2, #1E2455);
-    background: var(--Ocean-3, #212D63);
-    transition: background 0.3s;
-  }
-  
-  .link:hover {
-    background: #294285;
-  }
-  
-  .activeLink {
-    background: #294285;
-  }
-  
+  display: flex;
+  width: 100%;
+  padding: 9px 0px 10px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom: 3px solid var(--Ocean-2, #1E2455);
+  background: var(--Ocean-3, #212D63);
+  transition: background 0.3s;
+}
+
+.link:hover {
+  background: #294285;
+}
+
+.activeLink {
+  background: #294285;
+}

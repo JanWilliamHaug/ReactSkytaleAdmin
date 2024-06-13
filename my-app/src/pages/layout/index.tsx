@@ -1,3 +1,4 @@
+// src/layout/index.tsx
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Box, Flex } from '@chakra-ui/react';
@@ -6,7 +7,7 @@ import Header from '@/pages/shared/Header';
 
 const Layout: React.FC = () => {
   return (
-    <Flex direction="column" height="120vh" width="100vw">
+    <Flex direction="column" minHeight="100vh" width="100vw">
       <Header />
       <Flex flex="1">
         <Sidebar />

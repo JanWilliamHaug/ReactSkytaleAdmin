@@ -1,14 +1,16 @@
 /* src/pages/shared/Sidebar.css */
 .sidebar-container {
-    width: 250px;
-    background-color: var(--Ocean-3, #212D63);
-    color: white;
-    height: 100vh;
-  }
-  
-  .sidebar-icon {
-    margin-right: 10px;
-    width: 29.247px;
-    height: 30px;
-  }
-  
+  width: 250px;
+  background-color: var(--Ocean-3, #212D63);
+  color: white;
+  min-height: 100vh; /* Ensure it covers the full height */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sidebar-icon {
+  margin-right: 10px;
+  width: 29.247px;
+  height: 30px;
+}

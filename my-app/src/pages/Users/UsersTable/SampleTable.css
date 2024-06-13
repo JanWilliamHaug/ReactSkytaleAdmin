@@ -1,0 +1,10 @@
+.table-container {
+  width: 90%;
+  margin: 20px auto 0 50px;
+}
+
+.table-buttons {
+  background-color: #294285 !important;
+  color: white !important;
+  border-radius: 20px !important;
+}

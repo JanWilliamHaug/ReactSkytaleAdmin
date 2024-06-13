@@ -4,7 +4,7 @@ import userIcon from '@/assets/scss/images/user.svg';
 import groupIcon from '@/assets/scss/images/Group.svg';
 import varselIcon from '@/assets/scss/images/Varsel.svg';
 import { FaUserSlash, FaUserPlus } from 'react-icons/fa';
-import SampleTable from '@/pages/Users/SampleTable'; // Ensure the import path is correct
+import SampleTable from '@/pages/Users/UsersTable/SampleTable'; // Ensure the import path is correct
 import './Users.css';
 
 const Users: React.FC = () => {
