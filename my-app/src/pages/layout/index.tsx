@@ -6,7 +6,7 @@ import Header from '@/pages/shared/Header';
 
 const Layout: React.FC = () => {
   return (
-    <Flex direction="column" height="100vh" width="100vw">
+    <Flex direction="column" height="120vh" width="100vw">
       <Header />
       <Flex flex="1">
         <Sidebar />

@@ -4,6 +4,7 @@ import userIcon from '@/assets/scss/images/user.svg';
 import groupIcon from '@/assets/scss/images/Group.svg';
 import varselIcon from '@/assets/scss/images/Varsel.svg';
 import { FaUserSlash, FaUserPlus } from 'react-icons/fa';
+import './Users.css'; // Import the CSS file
 
 const iconSize = "30px"; // Define a constant for icon size
 const smallerIconSize = "26px"; // Smaller icon size for better consistency
@@ -13,7 +14,7 @@ const MainPage: React.FC = () => {
     <Box>
       <Flex justifyContent="space-between" alignItems="center" mb="20px" mx="10%">
         <Text color="white" fontSize="24px" fontWeight="bold">Brukere</Text>
-        <Button backgroundColor="#FFF" color="#212D63" fontWeight="bold">Ny bruker</Button>
+        <Button className="new-user-button">Ny bruker</Button> {/* Apply the className */}
       </Flex>
       <Flex justifyContent="space-between" alignItems="center" mb="20px" mx="10%">
         <Flex alignItems="center">

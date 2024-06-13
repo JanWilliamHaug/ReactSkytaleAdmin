@@ -4,6 +4,7 @@ import userIcon from '@/assets/scss/images/user.svg';
 import groupIcon from '@/assets/scss/images/Group.svg';
 import varselIcon from '@/assets/scss/images/Varsel.svg';
 import { FaUserSlash, FaUserPlus } from 'react-icons/fa';
+import SampleTable from '@/pages/Users/SampleTable'; // Ensure the import path is correct
 import './Users.css';
 
 const Users: React.FC = () => {
@@ -35,6 +36,7 @@ const Users: React.FC = () => {
           <Text className="user-info">Inaktive brukere <span>40</span></Text>
         </Flex>
       </Flex>
+      <SampleTable /> {/* Add the SampleTable component here */}
     </Box>
   );
 };

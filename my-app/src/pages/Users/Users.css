@@ -1,30 +1,49 @@
+:root {
+    --Ocean-2: #1E2455;
+}
+
 .users-page {
     padding: 20px;
-  }
-  
-  .page-title {
+}
+
+.page-title {
     color: white;
     font-size: 24px;
     font-weight: bold;
     margin-left: 55px; /* Adjusted margin-left to move it to the left */
-  }
-  
-  .new-user-button {
-    background-color: #FFF;
-    color: #212D63;
-    font-weight: bold;
-    margin-top: -10px; /* Adjusted margin-top */
-    margin-right: 55px; /* Adjusted margin-right to move it to the left */
-  }
-  
-  .user-info {
+}
+.new-user-button {
+    background-color: var(--Ocean-4, #294285) !important; /* Updated background color to lighter shade */
+    color: white !important; /* Ensure text color is white for contrast */
+    font-weight: bold !important;
+    margin-top: -10px !important; /* Adjusted margin-top */
+    margin-right: 60px !important; /* Adjusted margin-right to move it to the left */
+    border: none !important; /* Remove border if not needed */
+    border-radius: 25px !important; /* Increased border radius for more rounded corners */
+    padding: 10px 20px !important; /* Optional: Add padding for better appearance */
+    cursor: pointer !important; /* Change cursor to pointer on hover */
+}
+
+.new-user-button:hover {
+    background-color: #294285 !important; /* Optional: Darker shade on hover */
+}
+
+
+
+
+.new-user-button:hover {
+    background-color: #294285; /* Optional: Darker shade on hover */
+}
+
+.user-info {
     color: white;
     margin-left: 20px;
-  }
-  
-  .icon {
+}
+
+.icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-  }
+}
+
   
