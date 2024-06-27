@@ -9,12 +9,14 @@
   border-bottom: 3px solid var(--Ocean-2, #1E2455);
   background: var(--Ocean-3, #212D63);
   transition: background 0.3s;
+  text-decoration: none; /* Ensure links have no underline */
+  color: white; /* Ensure text color is white */
 }
 
 .link:hover {
-  background: #294285;
+  background: #294285; /* Hover effect color */
 }
 
 .activeLink {
-  background: #294285;
+  background: #294285; /* Active link color (Ocean 4) */
 }

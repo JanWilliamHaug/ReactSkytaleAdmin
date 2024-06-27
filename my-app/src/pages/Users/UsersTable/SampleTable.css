@@ -1,10 +1,14 @@
 .table-container {
-  width: 90%;
-  margin: 20px auto 0 50px;
+  width: 100%; /* Ensure the table takes the full width */
+  margin: 20px 0; /* Adjust the margins as needed */
 }
 
 .table-buttons {
-  background-color: #294285 !important;
-  color: white !important;
-  border-radius: 20px !important;
+  background-color: #294285;
+  color: white;
+  border-radius: 100px;
+}
+
+th, td {
+  border-color: #294285 !important;
 }

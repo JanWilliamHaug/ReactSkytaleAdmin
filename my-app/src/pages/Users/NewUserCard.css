@@ -1,0 +1,128 @@
+.new-user-card-custom {
+  width: 1402px;
+  height: 822px;
+  border-radius: 20px;
+  border: 2px solid var(--Ocean-4, #294285);
+  background: var(--Ocean-1, #0D123E);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0; /* Remove padding */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.new-user-card-header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure vertical alignment */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.new-user-card-header-custom h2 {
+  width: 415px;
+  color: var(--White, #FFF);
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0; /* Ensure no additional margins are applied */
+}
+
+.close-button-custom {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.new-user-card-body-custom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  flex: 1;
+}
+
+.form-section-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-section-custom label {
+  color: white;
+  margin-bottom: -20px;
+}
+
+.form-section-custom input, .form-section-custom select {
+  width: 335px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--Ocean-4, #294285);
+  background: var(--Ocean-2, #1E2455);
+  color: white;
+}
+
+.group-list-custom {
+  margin-top: 10px;
+  max-height: 450px; /* Set a taller max height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.group-item-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--Ocean-4, #294285);
+  color: white;
+  margin-bottom: 5px;
+  width: 335px;
+  height: 74px;
+}
+
+.remove-button-custom {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.new-user-card-footer-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure it fills the width */
+  height: 90px;
+  background: var(--Ocean-3, #212D63);
+  flex-shrink: 0;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.create-button-custom {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  border: 1px solid var(--Ocean-5, #3B76B0);
+  background: var(--Ocean-4, #294285);
+  color: white;
+  cursor: pointer;
+}

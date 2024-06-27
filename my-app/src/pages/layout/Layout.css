@@ -1,3 +1,14 @@
-/* Layout.css */
-
-/* Legg til eventuelle stiler for Layout-komponenten her */
+.content-area {
+    padding: 20px;
+    background-color: #1E2455; /* Ensure the background color matches the rest of the page */
+    color: white;
+    flex: 1;
+    overflow-y: auto; /* Allow vertical scrolling */
+  }
+  
+  .sidebar-separation {
+    background-color: #1E2455; /* Ensure the background color matches the rest of the page */
+    width: 120px; /* Adjust the width of the separation */
+    min-height: 100vh; /* Ensure it covers the full height */
+  }
+  

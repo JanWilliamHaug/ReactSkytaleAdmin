@@ -1,0 +1,14 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 1119px; /* Ensure consistent width */
+    height: 50px; /* Ensure consistent height */
+  }
+  
+  .page-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px; /* H1 desktop size */
+    font-weight: 700; /* Bold */
+  }
+  

@@ -1,5 +1,249 @@
-.configurations-page {
-    height: 100%;
-    background-color: #1E2455;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: #1E2455; /* Set your global background color */
+  color: white; /* Default text color */
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  width: 100vw; /* Ensure full width */
+}
+
+button.new-config-button {
+  background-color: var(--Ocean-4) !important;
+  color: white !important;
+  margin-top: 10px !important; /* Align with the Slett button */
+  border: 1px solid var(--Ocean-5) !important;
+  border-radius: 25px !important;
+  padding: 10px 20px !important;
+  cursor: pointer !important;
+  margin-bottom: 10px !important; /* Add space below the button */
+  margin-top: 60px !important; /* Add space over the button */
+  margin-left: -5px !important; /* Add space between the buttons */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust spacing between icon and text */
+}
+
+button.new-config-button:hover {
+  background-color: var(--Ocean-5) !important;
+}
+
+
+.config-tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.config-tab {
+  background: var(--Ocean-3);
+  color: white;
+  padding: 8px 16px; /* Reduced padding for smaller tabs */
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 3px;
+}
+
+.config-tab.active-tab {
+  background: var(--Ocean-4);
+  border-bottom: 3px solid var(--Ocean-4);
+  padding: 9px 16px; /* Reduced padding for smaller tabs */
+  color: #fff; /* Ensure active tab text is white */
+}
+
+.config-options {
+  gap: 10px;
+}
+
+.config-option {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  padding: 11px 0px;
+  border-bottom: 1px solid var(--Ocean-4);
+}
+
+.config-header {
+  margin-top: 20px; /* Adjust the spacing above headers */
+}
+
+.custom-line {
+  width: 1120px;
+  height: 1px;
+  background-color: var(--Ocean-4);
+  margin-top: 5px; /* Adjust the spacing below headers */
+  margin-bottom: 15px; /* Adjust the spacing above options */
+}
+
+.custom-line-above {
+  width: 1120px;
+  height: 1px;
+  background-color: transparent; /* Invisible line for spacing */
+  margin-bottom: 15px; /* Adjust the spacing above headers */
+}
+
+button.upgrade-license-button {
+  background-color: var(--Ocean-4) !important;
+  color: white !important;
+  border: 1px solid var(--Ocean-5) !important;
+  border-radius: 25px !important;
+  padding: 9px 14px !important;
+  cursor: pointer !important;
+}
+
+button.upgrade-license-button:hover {
+  background-color: var(--Ocean-5) !important;
+}
+
+.flex-upgrade-button {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  padding: 11px 0px;
+}
+
+.toggle-button {
+  width: 50px; /* Smaller width */
+  height: 25px; /* Smaller height */
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  background-color: #EDEDED;
+  transition: background-color 0.3s;
+}
+
+.toggle-button.on {
+  background-color: #71C4DF;
+}
+
+.toggle-circle {
+  width: 20px; /* Smaller width */
+  height: 20px; /* Smaller height */
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  transition: left 0.3s;
+}
+
+.toggle-button.on .toggle-circle {
+  left: 28px; /* Adjusted position for smaller width */
+}
+
+.toggle-text {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 153.1%; /* 24.496px */
+  color: var(--Black, var(--Black, #000));
+  text-align: center;
+  width: 20px;
+}
+
+.toggle-text.on {
+  left: 5px; /* Adjusted position */
+  text-align: center;
+  width: 20px;
+}
+
+.toggle-text.off {
+  right: 5px; /* Adjusted position */
+  text-align: center;
+  width: 20px;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Added space */
+}
+
+.custom-dropdown {
+  background: var(--Ocean-4, #294285);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px; /* Ensure it matches the height of the button */
+  font-weight: 700;
+  margin-right: 5px; /* Add some space between the dropdown and the delete button */
+}
+
+button.delete-button {
+  background: #FA0303;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Space between icon and text */
+  height: 36px; /* Ensure it matches the height of the dropdown */
+  font-weight: 700;
   
+}
+
+button.delete-button .chakra-icon {
+  margin-right: 5px;
+}
+
+.delete-button:hover {
+  background: var(--Ocean-5, #3B76B0);
+}
+
+.confirmation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--Ocean-1, #0D123E);
+  padding: 20px;
+  border: 2px solid var(--Ocean-4, #294285);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 1001;
+}
+
+.confirmation-popup button {
+  background: var(--Ocean-4, #294285);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.confirmation-popup button:hover {
+  background: var(--Ocean-5, #3B76B0);
+}
+
+.confirmation-popup p {
+  margin-bottom: 10px;
+}
+
+/* Additional styles for the standard configuration */
+.config-option.disabled .config-label {
+  opacity: 0.6;
+}
